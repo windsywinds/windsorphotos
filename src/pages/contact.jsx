@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import portrait from '../assets/portrait.jpg'
 
 
 const Contact = () => {
@@ -41,12 +42,17 @@ const Contact = () => {
   return (
     <div className="flex flex-row flex-wrap justify-evenly">
         <div className="flex flex-col items-center w-[50%]">
-        <img src="/portrait.jpg" alt="Portrait of me" className="w-8 h-auto mb-[20px]" />
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae magna non elit viverra malesuada eu vel elit. Proin euismod mollis malesuada.</p>
-        <a href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds on Instagram</a>
+
+        <img src={portrait} alt="Portrait of me" className="w-[auto] max-h-[200px] md:max-h-[250px] pt-5 md:pt-1" />
+
+        <h2 className="pt-2 text-xl font-semibold">About Me</h2>
+        <p className="pt-1 text-center">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, but in 2016 I took a big leap and invested in some professional gear so that
+          the images of the places and momemnts I experienced could be stored in better quality. Since then, I went on to purchase a drone and even more professional grade equipment to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
+        </p>
+        <p className="pt-2 pb-9">You can also check out my web portfolio, <a className="underline" href="https://windsywinds.github.io">here.</a></p>
+        
       </div>
-      <div className="flex justify-center items-center pt-12 md:pt-0">
+      <div className="flex justify-center items-center md:pl-3">
 
                 <form 
                     action="https://getform.io/f/e2059994-fbac-4aba-b565-63d41527e0a8"

@@ -34,6 +34,7 @@ const Prints = () => {
        if(!scriptRef.current){
          storeDiv.current.appendChild(script);
        }
+       
    });
    
      return (
