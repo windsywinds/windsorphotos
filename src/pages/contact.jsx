@@ -47,7 +47,7 @@ const Contact = () => {
 
         <h2 className="pt-2 text-xl font-semibold">About Me</h2>
         <p className="pt-1 text-center">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, but in 2016 I took a big leap and invested in some professional gear so that
-          the images of the places and momemnts I experienced could be stored in better quality. Since then, I went on to purchase a drone and even more professional grade equipment to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
+          the images of the places and moments I experienced could be stored in better quality. Since then, I went on to purchase a drone and even more professional grade equipment to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
         </p>
         <p className="pt-2 pb-9">You can also check out my web portfolio, <a className="underline" href="https://windsywinds.github.io">here.</a></p>
         

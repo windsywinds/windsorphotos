@@ -1,8 +1,23 @@
 border-2 border-slate-800 rounded-md
 
+drop-shadow-md
+shadow-md
+
 
    box-shadow:
       0.3px 0.5px 0.7px hsl(0deg 0% 0% / 0.36),
       0.8px 1.6px 2px -0.8px hsl(0deg 0% 0% / 0.36),
       2.1px 4.1px 5.2px -1.7px hsl(0deg 0% 0% / 0.36),
       5px 10px 12.6px -2.5px hsl(0deg 0% 0% / 0.36);    
+
+
+
+      <div className="flex flex-row flex-wrap justify-between w-[80vw]">
+          <section className="w-[70%] bg-cover bg-no-repeat flex flex-col pointer-events-none border-2 border-slate-800 rounded-md" style={{ backgroundImage: `url(${photo?.fields?.image.fields?.file?.url}?w=1500&h=1500)`, height: "calc(70vh - 0px)" }}>          
+        </section>
+        <div className="md: text-left justify-center items-center w-[25%] border-2 border-blue-800 rounded-md">
+        <h1 className="">{photo?.fields?.title}</h1>
+        <p className="">{photo?.fields?.description}</p>
+        <button className="text-center inline-block px-4 py-2 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-slate-700 to-slate-600 drop-shadow-md hover:stroke-white">See in Shop</button>
+        </div>
+          </div>

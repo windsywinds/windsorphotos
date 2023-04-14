@@ -39,8 +39,8 @@ const Prints = () => {
    
      return (
    
-         <div className="print-box">
-          <div className="store-box" id="my-store-86242021" ref={storeDiv}></div>
+         <div className="">
+          <div className="flex flex-wrap border-2 border-slate-800 rounded-md" id="my-store-86242021" ref={storeDiv}></div>
          </div>
     
    
