@@ -7,7 +7,10 @@ const GalleryItem = () => {
 
 const [photo, setSinglePhoto] = useState([]);
 let { id } = useParams();
-const client = createClient({ space: "dgpo6cqzt962", accessToken:"1RQEPbsg_MvNznBjdm5GLcSzmIYiMNAnNgJtXAqOBc4" });
+const client = createClient({
+  space: "b80vzvhdgw0j",
+  accessToken: "Mwv9--O7Gf5LHvE3jRfvYiJ6wFqw4cB26TRSkJK5its"
+});
 
   useEffect(() => {
     const getEntryById = async () => {

@@ -1,4 +1,4 @@
-
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 
@@ -8,7 +8,8 @@ const Home = () => {
           
           <p>Welcome, thanks for checking out my site, it's still under construction, so please check back later.</p>
           <p>In the meantime, please feel free to check out my images on instagram, <a className="underline" href="https://instagram.com/windsywinds/">@windsywinds</a></p>
-          <p className="pt-5">If there are any prints you'd like, send me a message and I'll get back to you with some options!</p>
+          <p className="pt-5">If there are any prints you'd like, you can check out <a className="underline" href="https://windsywinds.picfair.com/">my current shop</a>, or <NavLink to='/contact' className="underline">send me a message</NavLink> and I'll get back to you with some options!</p>
+          
       </div>
       );
 }

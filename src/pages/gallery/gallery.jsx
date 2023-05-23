@@ -9,8 +9,8 @@ const Gallery = () => {
   const [selectedTag, setSelectedTag] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const client = createClient({
-    space: "dgpo6cqzt962",
-    accessToken: "1RQEPbsg_MvNznBjdm5GLcSzmIYiMNAnNgJtXAqOBc4"
+    space: "b80vzvhdgw0j",
+    accessToken: "Mwv9--O7Gf5LHvE3jRfvYiJ6wFqw4cB26TRSkJK5its"
   });
 
   const filterByTag = async (tag) => {
@@ -75,8 +75,8 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="flex flex-row text-left gap-5 ">
-        <p>Filters: </p>
+      <div className="flex items-start flex-wrap justify-start flex-shrink-0 flex-row text-left ml-0 gap-5 ">
+        <p >Filters: </p>
         <button
           onClick={() => getAllEntries()}
           className={`hover:text-blue-500 duration-500 focus:text-blue-500 ${
@@ -101,17 +101,17 @@ const Gallery = () => {
             type="text"
             value={searchQuery}
             onChange={handleSearchInputChange}
-            className="border px-2 py-1"
+            className="border-0 px-5 py-0"
             placeholder="Search by keyword..."
           />
         </div>
       </div>
       <ul className="gallery-dense">
         {photo?.map((post) => (
-          <li key={post.sys.id}>
+          <li key={post.sys.id} className="">
             <NavLink to={`/photos/${post.sys.id}`}>
               <img
-                className=""
+                className="block w-full h-full object-cover"
                 src={`${post.fields?.image?.fields?.file?.url}?w=800&h=600&fit=fill`}
                 alt={post.fields?.description}
               />

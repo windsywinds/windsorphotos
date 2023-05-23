@@ -16,7 +16,7 @@ const Nav = () => {
       </div>
       <footer>  
       <p className="flex flex-row justify-center text-center opacity-50 pt-8">
-				&copy; {new Date().getFullYear()} <a href="https://windsywinds.github.io" target="_blank" className="pl-1 pr-1"> Sam Windsor. All rights reserved.</a> 
+				&copy; {new Date().getFullYear()} <a href="https://windsywinds.github.io" target="_blank" className="px-1"> Sam Windsor. All rights reserved.</a> 
 			</p>
       </footer>
       
@@ -29,10 +29,10 @@ export default Nav;
 
 export var Navbar = () => {
   return (
-    <div className='max-w-[80%] ml-[10%] flex items-center justify-between gap-9 lg:gap-0 '>
+    <div className='max-w-[80%] min-h-[30px] ml-3 sm:ml-9 md:ml-[10%] flex items-center justify-between gap-9 lg:gap-0  '>
       
-      <div className="pr-6 pt-1 md:pr-0 md:pt-0">
-    <img src={logo} alt='Logo' className='w-auto md:max-h-36' />
+      <div className="pr-0 sm:pr-6 pt-1 md:pr-0 md:pt-0 ">
+    <img src={logo} alt='Logo' className='w-auto  min-w-[80px] md:max-h-36' />
     </div>
 
     <div className="flex md:gap-16 gap-6">
