@@ -45,7 +45,7 @@ export default function Contact() {
     <div className="flex flex-row flex-wrap justify-evenly">
         <div className="flex flex-col items-center w-[50%]">
 
-        <Image src={portrait} alt="Portrait of me" className="w-[auto] max-h-[200px] md:max-h-[250px] pt-5 md:pt-1" />
+        <Image src={portrait} alt="Portrait of me" className="w-[auto] max-h-[200px] pt-5 md:pt-1 pointer-events-none" />
 
         <h2 className="pt-2 text-xl font-semibold">About Me</h2>
         <p className="pt-1 text-center">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, but in 2016 I took a big leap and invested in some professional gear so that

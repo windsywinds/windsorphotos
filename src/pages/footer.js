@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="py-5 text-center">
+    <div className="pt-2 text-center z-30">
         <div className="container max-w-screen-lg mx-auto">
             <div>
                 <div className="flex flex-wrap justify-center gap-4">
@@ -69,7 +69,7 @@ export default function Footer() {
         
 
         <footer>  
-      <p className="flex flex-row justify-center text-center opacity-50 pt-8">
+      <p className="flex flex-row justify-center text-center opacity-30 pt-4">
 				&copy; {new Date().getFullYear()} <a href="https://windsywinds.github.io" target="_blank" className="px-1"> Sam Windsor. All rights reserved.</a> 
 			</p>
       </footer>
