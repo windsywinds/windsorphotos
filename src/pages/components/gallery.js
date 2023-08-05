@@ -11,8 +11,8 @@ export default function Gallery() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showKeywords, setShowKeywords] = useState(false); // New state for controlling keywords visibility
   const client = createClient({
-    space: 'b80vzvhdgw0j',
-    accessToken: 'Mwv9--O7Gf5LHvE3jRfvYiJ6wFqw4cB26TRSkJK5its',
+    space: process.env.NEXT_PUBLIC_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_ACCESS_TOKEN,
   });
 
   const filterByTag = async (tag) => {

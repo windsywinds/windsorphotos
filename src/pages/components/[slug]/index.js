@@ -13,8 +13,8 @@ const GalleryItem = () => {
 
   React.useEffect(() => {
     const client = createClient({
-      space: 'b80vzvhdgw0j',
-      accessToken: 'Mwv9--O7Gf5LHvE3jRfvYiJ6wFqw4cB26TRSkJK5its',
+      space: process.env.NEXT_PUBLIC_SPACE_ID,
+      accessToken: process.env.NEXT_PUBLIC_ACCESS_TOKEN,
     });
 
     const fetchPost = async () => {
@@ -44,11 +44,11 @@ const GalleryItem = () => {
     <div className="flex w-[100%]">     
       <div className="flex w-flex-wrap sm:flex-row gap-4 ">
 
-        <div className="flex max-w-[60%]  pointer-events-none border-2 border-pink-500" >  
+        <div className="flex max-w-[60%]  pointer-events-none" >  
         <Image src={post.fields?.image?.fields?.file?.url} alt='Logo' width={800} height={600} objectfit="contain" className=' pointer-events-none'/>        
           </div>
 
-        <div className="flex flex-col max-w-[30%] md:text-left  border-2 border-green-500 ">
+        <div className="flex flex-col max-w-[30%] md:text-left ">
 
         <h1 className="text-4xl pb-9">{post?.fields?.title}</h1>
 
