@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { createClient } from 'contentful';
 import Link from 'next/link';
+import loading from '../../assets/loading.gif'
 
 
 const GalleryItem = () => {
@@ -37,18 +38,24 @@ const GalleryItem = () => {
   }
 
   if (!post) {
-    return <p>Image not found</p>;
+    // If post data is not available yet, show the loading indicator
+    return (
+      <div className="flex pt-8">
+        
+        <img src={loading} alt="Loading" />
+      </div>
+    );
   }
 
   return (
-    <div className="flex w-[100%]">     
-      <div className="flex w-flex-wrap sm:flex-row gap-4 ">
+    <div className="flex max-w-screen">     
+      <div className="flex flex-col md:flex-row gap-4 items-center sm:items-start">
 
-        <div className="flex max-w-[60%]  pointer-events-none" >  
-        <Image src={post.fields?.image?.fields?.file?.url} alt='Logo' width={800} height={600} objectfit="contain" className=' pointer-events-none'/>        
+        <div className="flex w-[90%] md:max-w-[60%] pointer-events-none" >  
+        <Image src={post.fields?.image?.fields?.file?.url} alt='Logo' width={800} height={600} objectfit="contain" className='object-cover pointer-events-none'/>        
           </div>
 
-        <div className="flex flex-col max-w-[30%] md:text-left ">
+        <div className="flex flex-col w-[90%] md:max-w-[30%] text-left justify-start items-start ">
 
         <h1 className="text-4xl pb-9">{post?.fields?.title}</h1>
 

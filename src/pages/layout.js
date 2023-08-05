@@ -23,21 +23,21 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className=" min-h-screen  ">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
      
       
-      <nav className={`sticky fixed z-30 top-0 md:pb-1 bg-white pb-2  shadow-lg shadow-slate-300 rounded-xl ${
+      <nav className={`sticky fixed z-30 top-0 md:pb-1 bg-white pb-2  shadow-md shadow-slate-300 rounded-b-xl ${
         isVisible ? 'opacity-100' : 'opacity-0'
       } transition-opacity`}
     >
         <Navbar />
       </nav>
-      <div className="flex justify-center items-center ">
-      <main className="flex w-[90%] z-10 pt-4 justify-center items-center ">
+      <div className="flex flex-grow justify-center items-center ">
+      <main className="flex  w-[90%] z-10 pt-4 justify-center items-center ">
       {children}
       </main>
       </div>
-      <div className="flex justify-center items-center z-30">
+      <div className="flex justify-center items-end z-30">
       <Footer />
       </div>
       
