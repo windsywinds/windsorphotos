@@ -1,0 +1,25 @@
+
+
+issues:  
+  
+Shopping cart in nav on small screens
+home page on small screens - image not full (only noticeable in safari??, not in dev tools)
+Forced dark mode causes design issues (samsung browser)
+
+
+
+updates:
+
+text size
+font
+Complete shop prices/details + shipping costs?
+website icon -  "SW" handfont?
+
+
+<title>Sam Windsor - Fine Art Photography</title>
+<meta name=’description’ content=’Description goes here’ />
+<meta name="color-scheme" content="light only">
+<link rel="shortcut icon" href="/static/favicon.ico" />
+
+
+completed:
