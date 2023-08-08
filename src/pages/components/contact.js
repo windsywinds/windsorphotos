@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import Image from 'next/image'
-import portrait from '../assets/portrait.png'
+import portrait from '../../assets/portrait.png'
 
 
 export default function Contact() {

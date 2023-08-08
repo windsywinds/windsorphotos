@@ -120,7 +120,7 @@ export default function Gallery() {
           <li key={post.sys.id} className="">
             <Link href={`/components/${post.sys.id}`}>
               <img
-                className="block w-full h-full object-cover"
+                className="block w-full h-full object-cover pointer-events-none"
                 src={`${post.fields?.image?.fields?.file?.url}?w=800&h=600&fit=fill`}
                 alt={post.fields?.description}
               />

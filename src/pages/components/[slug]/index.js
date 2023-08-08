@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { createClient } from 'contentful';
 import Link from 'next/link';
-import loading from '../../assets/loading.gif'
+import loading from '../../../assets/loading.gif'
 
 
 const GalleryItem = () => {
