@@ -43,18 +43,19 @@ export default function Contact() {
 
   return (
     <div className="flex flex-row flex-wrap justify-evenly">
-        <div className="flex flex-col items-center w-[50%]">
+        <div className="flex flex-col items-center w-[50%] ">
+          <p className="flex py-60 px-60 bg-gradient-to-b from-slate-300 to-white rounded-full blur-3xl absolute z-10 "></p>
 
-        <Image src={portrait} alt="Portrait of me" className="w-[auto] max-h-[200px] pt-5 md:pt-1 pointer-events-none" />
+        <Image src={portrait} alt="Portrait of me" className="flex w-[auto] max-h-[200px] pt-5 md:pt-1 pointer-events-none z-30" />
 
-        <h2 className="pt-2 text-xl font-semibold">About Me</h2>
-        <p className="pt-1 text-center">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, but in 2016 I took a big leap and invested in some professional gear so that
-          the images of the places and moments I experienced could be stored in better quality. Since then, I went on to purchase a drone and even more professional grade equipment to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
+        <h2 className="flex pt-2 text-xl font-semibold z-30">About Me</h2>
+        <p className="pt-1 text-left z-30">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, taking pictures of amazing trips and places, but in 2016 during a trip to Vietnam I decided that I really wanted to invest in some good gear so that the images of the places and moments I experienced could be stored in better quality. </p>
+        <p className="pt-1 text-cenleftter z-30">Since buying my first DSLR, I've explored various other types of photography, and acquired a bunch more gear to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
         </p>
-        <p className="pt-2 pb-9">You can also check out my web portfolio, <a className="underline" href="https://windsywinds.github.io">here.</a></p>
+        <p className="pt-2 pb-9 z-30">You can also check out my web portfolio, <a className="underline" href="https://windsywinds.github.io">here.</a></p>
         
       </div>
-      <div className="flex justify-center items-center md:pl-3">
+      <div className="flex justify-center items-center md:pl-3 z-30">
 
                 <form 
                     action="https://getform.io/f/e2059994-fbac-4aba-b565-63d41527e0a8"
