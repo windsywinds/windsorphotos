@@ -3,6 +3,8 @@ import Footer from './footer';
 import React, { useEffect, useState } from 'react';
 
 export default function Layout({ children }) {
+
+  //handles the visibility of the sticky nav bar when the user scrolls. 
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {

@@ -67,6 +67,7 @@ export default function Gallery() {
     getAllEntries();
   }, []);
 
+  //monitor changes to the search input
   const handleSearchInputChange = (e) => {
     setSearchQuery(e.target.value);
     if (e.target.value === '') {

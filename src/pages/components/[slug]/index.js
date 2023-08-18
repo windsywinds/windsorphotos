@@ -32,7 +32,7 @@ const GalleryItem = () => {
     }
   }, [slug]);
 
-  // If the slug is not available yet, you can show a loading message
+  // If the slug is not available yet, show loading 
   if (!slug) {
     return <p>Loading...</p>;
   }
