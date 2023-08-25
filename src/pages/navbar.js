@@ -8,9 +8,9 @@ import { useRouter } from "next/router";
 export default function Navbar() {
   const router = useRouter();
   return (
-    <div className='w-full min-h-[30px] flex flex-row place-content-between'>
+    <div className='w-full min-h-[30px] flex flex-row place-content-between overflow-hidden'>
       
-      <div className="flex px-2 sm: pl-4 md:pl-8">
+      <div className="flex px-1 sm:pl-4 md:pl-8">
       <Link href='../'><Image src={logo} alt='Logo' className='w-auto object-fit min-w-[80px] max-h-28 ' /></Link>
     </div>
 
@@ -21,12 +21,13 @@ export default function Navbar() {
     <Link href='/components/contact' className={`hover:text-blue-500 ${router.pathname.startsWith("/components/contact") ? "text-blue-500 focus:text-blue-500" : "focus:text-blue-500"}`}>Contact</Link>
 
     <Link href='/components/prints?store-page=cart' >
-    <div className='ec-cart-widget pointer-events-none '>
-      <div>
-        <script  data-cfasync="true" data-layout="SMALL_ICON_COUNTER" data-show-empty-cart="false" data-show-buy-animation="true"  type="text/javascript" src="https://app.ecwid.com/script.js?86242021&data_platform=code&data_date=2023-08-05" ></script>
+      <div className='ec-cart-widget pointer-events-none '>
+        <div>
+          <script  data-cfasync="true" data-layout="SMALL_ICON_COUNTER" data-show-empty-cart="false" data-show-buy-animation="true"  type="text/javascript" src="https://app.ecwid.com/script.js?86242021&data_platform=code&data_date=2023-08-05" ></script>
         <script type="text/javascript">Ecwid.init();</script>
+        </div>
       </div>
-      </div></Link>
+    </Link>
 
     </div>
   </div>
