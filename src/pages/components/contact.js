@@ -48,7 +48,7 @@ export default function Contact() {
 
         <Image src={portrait} alt="Portrait of me" className="flex w-[auto] max-h-[200px] pt-5 md:pt-1 pointer-events-none z-30" />
 
-        <h2 className="flex pt-2 text-xl font-semibold z-30">About Me</h2>
+        <h2 className="flex pt-2 text-xl font-semibold z-30 ">About Me</h2>
         <p className="pt-1 text-left z-30">Hi! I'm Sam. I'm a photographer, web designer, and snowboard coach. I've always been passionate about photography, taking pictures of amazing trips and places, but in 2016 during a trip to Vietnam I decided that I really wanted to invest in some good gear so that the images of the places and moments I experienced could be stored in better quality. </p>
         <p className="pt-1 text-left z-30">Since buying my first DSLR, I've explored various other types of photography, and acquired a bunch more gear to turn my passion into something more. I hope you enjoy the images I've produced, please feel free to get in touch using my contact form, or follow me on Instagram, <a className="underline" href="https://www.instagram.com/windsywinds/" target="_blank" rel="noopener noreferrer">@windsywinds.</a>
         </p>
