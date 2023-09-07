@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col md:flex-row flex-shrink  items-center justify-evenly sm:space-x-12">
         <div className="flex flex-col items-center w-[80%] md:w-[50%] ">
-          <p className="flex py-60 px-60 bg-gradient-to-b from-slate-300 to-white rounded-full blur-3xl absolute z-10 "></p>
+          <p className="flex py-48 px-48 md:py-60 md:px-60 bg-gradient-to-b from-slate-300 to-white rounded-full blur-3xl absolute z-10 "></p>
 
         <Image src={portrait} alt="Portrait of me" className="flex w-[auto] max-h-[200px] pt-5 md:pt-1 pointer-events-none z-30" />
 
